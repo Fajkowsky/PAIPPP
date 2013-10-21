@@ -4,3 +4,4 @@
 *.sublime-*
 local_settings.py
 main.db
+*.egg-info
