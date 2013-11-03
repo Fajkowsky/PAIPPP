@@ -1,13 +1,9 @@
-from django.template.loader import get_template
-from django.template import Context
-from django.http import HttpResponse
+from django.shortcuts import render
+
 
 def hello(request):
-	title = 'hello Dawid'
-	content = 'Hello world & Dawid'
-	t = get_template('base.html')
-	html = t.render(Context({
-		'title': title, 
-		'content': content
-		}))
-	return HttpResponse(html)
+    base_data = {
+        'title': 'hello Dawid',
+        'content': 'Hello world & Dawid'
+    }
+    return render(request, 'base.html', base_data)
