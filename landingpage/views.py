@@ -6,4 +6,4 @@ def hello(request):
         'title': 'hello Dawid',
         'content': 'Hello world & Dawid'
     }
-    return render(request, 'base.html', base_data)
+    return render(request, 'index.html', base_data)
