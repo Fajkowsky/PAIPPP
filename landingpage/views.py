@@ -1,4 +1,9 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+
 
 def hello(request):
-    return HttpResponse("Hello world")
+    base_data = {
+        'title': 'hello Dawid',
+        'content': 'Hello world & Dawid'
+    }
+    return render(request, 'base.html', base_data)
