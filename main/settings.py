@@ -123,6 +123,8 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'landingpage',
+    'landingpage.forms',
+    'bootstrapform',
     #---------------------------
     'south',
 )
