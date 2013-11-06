@@ -7,3 +7,6 @@ def hello(request):
         'content': 'Hello world & Dawid'
     }
     return render(request, 'index.html', base_data)
+
+def register(request):
+    return render(request, 'register.html')
