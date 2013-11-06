@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 install_requires = [
     'Django==1.5.4',
-
+    'South==0.8.2',
 ]
 
 dependency_links = [
