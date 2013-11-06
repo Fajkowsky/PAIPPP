@@ -11,7 +11,6 @@
   function onScroll(event) {
     var winHeight = window.innerHeight ? window.innerHeight : $(window).height();
     var closeToBottom = ($(window).scrollTop() + winHeight > $(document).height() - 100);
-
     if (closeToBottom) {
       var items = $('#tiles li'),
           firstTen = items.slice(0, 10);
@@ -25,7 +24,6 @@
       if (handler.wookmarkInstance) {
         handler.wookmarkInstance.clear();
       }
-
       handler = $('#tiles li');
       handler.wookmark(options);
     });
@@ -35,4 +33,5 @@
 
   var handler = $('#tiles li');
   handler.wookmark();
+  applyLayout();
 })(jQuery);
