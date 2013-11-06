@@ -7,9 +7,6 @@ install_requires = [
 ]
 
 dependency_links = [
-    'git+https://github.com/django-nonrel/django@nonrel-1.3',
-    'git+https://github.com/django-nonrel/djangotoolbox@toolbox-1.3',
-    'git+https://github.com/django-nonrel/mongodb-engine@mongodb-engine-1.3',
 ]
 
 if __name__ == '__main__':
