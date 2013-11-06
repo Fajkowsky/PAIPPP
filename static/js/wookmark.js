@@ -14,7 +14,7 @@
     if (closeToBottom) {
       var items = $('#tiles li'),
           firstTen = items.slice(0, 10);
-      $('#tiles').append(firstTen.clone());
+      $('#tiles').append(firstTen.clone().fadeIn());
       applyLayout();
     }
   };
