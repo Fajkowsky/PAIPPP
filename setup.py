@@ -3,13 +3,10 @@ from setuptools import setup, find_packages
 
 install_requires = [
     'Django==1.5.4',
-
+    'South==0.8.2',
 ]
 
 dependency_links = [
-    'git+https://github.com/django-nonrel/django@nonrel-1.3',
-    'git+https://github.com/django-nonrel/djangotoolbox@toolbox-1.3',
-    'git+https://github.com/django-nonrel/mongodb-engine@mongodb-engine-1.3',
 ]
 
 if __name__ == '__main__':
