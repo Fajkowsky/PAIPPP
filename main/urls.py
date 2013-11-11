@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'landingpage.views.hello', name='home'),
     url(r'^register/$', 'landingpage.views.register', name='register'),
+    url(r'^login/$', 'landingpage.views.login', name='login'),
     # url(r'^main/', include('main.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
